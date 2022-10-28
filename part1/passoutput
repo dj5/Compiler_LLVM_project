@@ -1,0 +1,123 @@
+HelloPass runOnFunction: test
+  %1 = alloca i32, align 4
+  %2 = alloca i32, align 4
+  %3 = alloca i32, align 4
+  %4 = alloca i32, align 4
+  %5 = alloca i32, align 4
+  %6 = alloca i32, align 4
+  store i32 0, i32* %1, align 4
+This is Store
+  store i32 1, i32* %3, align 4
+This is Store
+  br label %7
+         Count of predecessors 0
+         Count of successors 1
+  %8 = load i32, i32* %1, align 4
+This is Load
+  %9 = add nsw i32 %8, 1
+Op Code:add
+This is Addition
+          %8 = load i32, i32* %1, align 4
+        i32 1
+  store i32 %9, i32* %3, align 4
+This is Store
+  %10 = load i32, i32* %3, align 4
+This is Load
+  %11 = load i32, i32* %2, align 4
+This is Load
+  %12 = mul nsw i32 %10, %11
+Op Code:mul
+This is Multiplication
+          %10 = load i32, i32* %3, align 4
+          %11 = load i32, i32* %2, align 4
+  store i32 %12, i32* %3, align 4
+This is Store
+  %13 = load i32, i32* %2, align 4
+This is Load
+  %14 = icmp sgt i32 %13, 9
+  br i1 %14, label %15, label %21
+         Count of predecessors 2
+         Count of successors 2
+  %16 = load i32, i32* %4, align 4
+This is Load
+  %17 = load i32, i32* %3, align 4
+This is Load
+  %18 = mul nsw i32 %16, %17
+Op Code:mul
+This is Multiplication
+          %16 = load i32, i32* %4, align 4
+          %17 = load i32, i32* %3, align 4
+  store i32 %18, i32* %6, align 4
+This is Store
+  %19 = load i32, i32* %6, align 4
+This is Load
+  %20 = sub nsw i32 %19, 3
+Op Code:sub
+This is Subtraction
+          %19 = load i32, i32* %6, align 4
+        i32 3
+  store i32 %20, i32* %3, align 4
+This is Store
+  br label %26
+         Count of predecessors 1
+         Count of successors 1
+  %22 = load i32, i32* %5, align 4
+This is Load
+  %23 = add nsw i32 %22, 1
+Op Code:add
+This is Addition
+          %22 = load i32, i32* %5, align 4
+        i32 1
+  store i32 %23, i32* %1, align 4
+This is Store
+  %24 = load i32, i32* %4, align 4
+This is Load
+  %25 = sdiv i32 %24, 2
+Op Code:sdiv
+This is Division
+          %24 = load i32, i32* %4, align 4
+        i32 2
+  store i32 %25, i32* %5, align 4
+This is Store
+  br label %26
+         Count of predecessors 1
+         Count of successors 1
+  %27 = load i32, i32* %2, align 4
+This is Load
+  store i32 %27, i32* %1, align 4
+This is Store
+  br label %28
+         Count of predecessors 2
+         Count of successors 1
+  %29 = load i32, i32* %1, align 4
+This is Load
+  %30 = icmp slt i32 %29, 9
+  br i1 %30, label %7, label %31, !llvm.loop !2
+         Count of predecessors 1
+         Count of successors 2
+  %32 = load i32, i32* %1, align 4
+This is Load
+  %33 = add nsw i32 %32, 1
+Op Code:add
+This is Addition
+          %32 = load i32, i32* %1, align 4
+        i32 1
+  store i32 %33, i32* %1, align 4
+This is Store
+  ret void
+         Count of predecessors 1
+         Count of successors 0
+HelloPass runOnFunction: main
+  %3 = alloca i32, align 4
+  %4 = alloca i32, align 4
+  %5 = alloca i8**, align 8
+  store i32 0, i32* %3, align 4
+This is Store
+  store i32 %0, i32* %4, align 4
+This is Store
+  store i8** %1, i8*** %5, align 8
+This is Store
+  call void @test()
+  ret i32 0
+         Count of predecessors 0
+         Count of successors 0
