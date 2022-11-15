@@ -1,0 +1,6 @@
+/home/dj/Downloads/Masters_Study_Sem_1/Compiler_Con/LLVM_Proj/Compiler_LLVM_Project/Compiler_LLVM_project/part2/pass/LivenessAnalysis/build/CMakeFiles/intrinsics_gen.dir
+/home/dj/Downloads/Masters_Study_Sem_1/Compiler_Con/LLVM_Proj/Compiler_LLVM_Project/Compiler_LLVM_project/part2/pass/LivenessAnalysis/build/CMakeFiles/omp_gen.dir
+/home/dj/Downloads/Masters_Study_Sem_1/Compiler_Con/LLVM_Proj/Compiler_LLVM_Project/Compiler_LLVM_project/part2/pass/LivenessAnalysis/build/CMakeFiles/acc_gen.dir
+/home/dj/Downloads/Masters_Study_Sem_1/Compiler_Con/LLVM_Proj/Compiler_LLVM_Project/Compiler_LLVM_project/part2/pass/LivenessAnalysis/build/CMakeFiles/LivenessAnalysis.dir
+/home/dj/Downloads/Masters_Study_Sem_1/Compiler_Con/LLVM_Proj/Compiler_LLVM_Project/Compiler_LLVM_project/part2/pass/LivenessAnalysis/build/CMakeFiles/edit_cache.dir
+/home/dj/Downloads/Masters_Study_Sem_1/Compiler_Con/LLVM_Proj/Compiler_LLVM_Project/Compiler_LLVM_project/part2/pass/LivenessAnalysis/build/CMakeFiles/rebuild_cache.dir
