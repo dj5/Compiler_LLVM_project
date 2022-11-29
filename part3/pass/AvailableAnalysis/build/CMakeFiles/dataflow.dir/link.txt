@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdataflow.a CMakeFiles/dataflow.dir/dflow.cpp.o
+/usr/bin/ranlib libdataflow.a
